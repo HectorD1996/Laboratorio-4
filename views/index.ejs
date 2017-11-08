@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Escriba su orden de Pizza.</h1>
+
+  <ul class="quotes">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span><%= quotes[i].name %></span>
+      <span><%= quotes[i].Descripcion %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Add a quote</h2>
+
+  <form action="/pizza" method="POST" id="Info">
+    <input type="text" placeholder="name" name="name" id="name1">
+    <input type="text" placeholder="Descripcion" name="Descripcion" id ="desc">
+    <input type="text" placeholder="Ingredientes" name="Ingredientes" id ="ing">
+    <input type="text" placeholder="Masa" name="Masa" id = "masa">
+    <input type="text" placeholder="Tamaño" name="Tamaño" id = "tam">
+    <input type="text" placeholder="Porciones" name="Porciones" id="por">
+    <input type="text" placeholder="queso" name="queso" id ="queso">
+    <button type="submit">Submit</button>
+    
+  </form>
+
+
+  <div>
+    <h2>Remplazar Datos de una orden segun el nombre</h2>
+    <button id="update"> Actualizar </button>
+  </div>
+
+  <div>
+    <h2>Borrar Orden Segun Nombre</h2>
+    <input type="text" placeholder="queso" name="queso" id ="tdelete">
+    <button id="delete">BORRAR </button>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
