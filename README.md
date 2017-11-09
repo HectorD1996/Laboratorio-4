@@ -3,7 +3,7 @@ En carpeta jwt se encuentra la primera serie
 
 Segunda y Tercera Serie 
 
-usar node server.js para inicare ir a localHost:3000
+Usar node server.js para inicare ir a localHost:3000 (ademas de npm install)
 
 Para ingresar datosa llenar los campos especificados y dar sumit
 
